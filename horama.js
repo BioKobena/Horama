@@ -27,14 +27,6 @@ const mainFn = () =>{
         }
     })
 
-    // if(window.pageYOffset + window.innerHeight >= progress.offsetTop)
-    // {
-    //     document.querySelectorAll('.progress-percent').forEach((el, i)=>{
-    //         el.style.width  = `${progressBarPercents[i]}%`
-    //         el.previousElementSibling.firstElementChild.textContent = progressBarPercents[i];
-    //     });
-    // }
-
 }
 mainFn();
 
