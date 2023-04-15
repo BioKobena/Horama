@@ -10,6 +10,11 @@
   --black: #3c3c3c;
   --white: #fff;
   --transparent: rgba(255, 255, 255, 0.3);
+  --primary-color: #2b81e4;
+    --secondary-color: #eee;
+    --white-color: #fff;
+    --grey-color: #555;
+    --light-grey-color: #777;
 }
 * {
   margin: 0;
@@ -102,7 +107,7 @@ html {
 }
 
 .change.navbar-link {
-  color: var(--black);
+  color: var(--blue-pure);
 }
 
 .navbar-link:hover {
@@ -235,7 +240,6 @@ iframe {
 .explainAbout {
   font-size: 1.4rem;
   font-weight: 400;
-  /* margin-left: -2rem; */
 }
 
 .category {
@@ -323,7 +327,7 @@ iframe {
 .computer-text {
   font-size: 1rem;
   font-weight: 700;
-  color: #333;
+  color: var(--blue-palette);
   text-transform: capitalize;
   position: absolute;
   top: -15rem;
@@ -338,7 +342,7 @@ iframe {
 
 .computer-tools {
   font-size: 1.3rem;
-  /* color: var(--gray-light); */
+  color: var(--blue-palette);
   letter-spacing: 0.1rem;
   font-weight: 200;
 }
@@ -362,5 +366,136 @@ iframe {
 .contacts{
   width: 100vw;
   height: 100vh;
+  padding: 2rem;
+    text-align: center;
+    background-size: cover;
+    animation: contact-bg 35s infinite;
 }
+
+.contact-heading{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--white);
+  text-shadow: 0 0.1rem 0.2rem #000;
+  margin: 1rem;
+}
+
+.contact-form{
+  width: 65%;
+  height: 31rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: auto;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+}
+
+.input-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.input-groups{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-groups .input-group{
+  width: 48.5%;
+}
+
+.input-group input, .input-group textarea{
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: var(--transparent);
+  animation: inputBorder 35s infinite;
+  font-size: 1rem;
+  color: var(--light-grey-color);
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  transition: border 0.3s;
+  font-weight: lighter;
+}
+
+.input-group input:focus, .input-group textarea:focus{
+  border: 0.1rem solid #ccc;
+}
+
+.input-group label{
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--grey-color);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.form-btn{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: var(--light-grey-color);
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  animation: contact-bg 35s infinite;
+  transition: background-color 0.4s;
+}
+
+.form-btn:hover{
+  background-color: var(--grey-color);
+}
+
+.input-group textarea{
+  max-height: 10rem;
+  max-width: 100%;
+}
+
+@keyframes inputBorder {
+  0%{
+      border: 0.1rem solid #3d3d3d;
+  }
+  25%{
+    border: 0.1rem solid #ced8e4;
+  }
+  50%{
+    border: 0.1rem solid #1e81f3;
+  }
+  75%{
+    border: 0.1rem solid #ff7842;
+  }
+  100%{
+    border: 0.1rem solid #3d3d3d;
+  }
+}
+
+@keyframes contact-bg {
+  0%{
+      background-color: #3d3d3d;
+  }
+  25%{
+      background-color: #ced8e4;
+  }
+  50%{
+      background-color: #1e81f3;
+  }
+  75%{
+      background-color: #ff7842;
+  }
+  100%{
+      background-color: #3d3d3d;
+  }
+}
+
 /*Fin Produits*/

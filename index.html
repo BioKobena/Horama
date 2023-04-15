@@ -52,7 +52,9 @@
           <span class="homeDescription"
             >Nous faisons de vos rêve une réalité.</span
           ><br /><br />
-          <span class="homeDescription" style="font-weight: bold; color: #2a7fa3"
+          <span
+            class="homeDescription"
+            style="font-weight: bold; color: #2a7fa3"
             >Horama, une vision</span
           >
           <button class="btn">
@@ -454,13 +456,61 @@
       </section>
 
       <section class="section contacts" id="contacts">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID?controls=0&autoplay=1&mute=1&loop=1&playlist=va52HMUb1q8" frameborder="0" allowfullscreen></iframe>
-        
+        <!-- <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID?controls=0&autoplay=1&mute=1&loop=1&playlist=va52HMUb1q8"
+          frameborder="0"
+          allowfullscreen
+        ></iframe> -->
+        <h1 class="contact-heading">Contactez nous</h1>
+        <form class="contact-form center">
+          <div class="input-group">
+            <label> Nom & Prénoms </label>
+            <input
+              type="text"
+              class="contact-input"
+              placeholder="Entrez vos nom & prénoms"
+            />
+          </div>
+
+          <div class="input-groups">
+            <div class="input-group">
+              <label> Email </label>
+              <input
+                type="email"
+                class="contact-input"
+                placeholder="Entrez votre email"
+              />
+            </div>
+
+            <div class="input-group">
+              <label> Téléphone</label>
+              <input
+                type="text"
+                class="contact-input"
+                placeholder="Entrez votre numéro"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Message</label>
+            <textarea
+              class="form-textarea"
+              placeholder="Laissez nous un message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Envoyer" class="form-btn" />
+        </form>
       </section>
       <div id="particles-js"></div>
     </div>
 
-    <div class="loader"><img src="https://cdn.dribbble.com/users/1787505/screenshots/7300251/media/a351d9e0236c03a539181b95faced9e0.gif" alt=""></div>
+    <!-- <div class="loader">
+      <img
+        src="https://cdn.dribbble.com/users/1787505/screenshots/7300251/media/a351d9e0236c03a539181b95faced9e0.gif"
+        alt=""
+      />
+    </div> -->
     <script src="./horama.js"></script>
     <script src="./loader.js"></script>
   </body>
