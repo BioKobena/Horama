@@ -308,17 +308,32 @@ iframe {
 .box-computer {
   height: 18rem;
   display: flex;
-  /* text-align: center; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--white);
-  box-shadow: 0.1rem 0.1rem 0.1rem var(--transparent);
+  /* background: linear-gradient(to right, var(--blue-light), var(--blue-white), var(--blue-pure), #00ffff, #0000ff, var(--white), var(--blue-palette));
+  background-size: 200% auto;
+  animation: gradient 10s ease infinite; */
+  box-shadow: 0.01rem 0.1rem 0.1rem var(--transparent);
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.5s;
   border-radius: 0.15rem;
 }
+
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
 
 .box-computer:hover {
   box-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.11);
