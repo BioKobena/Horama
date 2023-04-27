@@ -257,6 +257,10 @@ iframe {
   animation: horama 5s alternate linear infinite;
 }
 
+.first{
+  
+}
+
 @keyframes horama {
   0% {
     transform: translateY(-3rem);

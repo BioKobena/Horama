@@ -1,98 +1,71 @@
-/* ---- particles.js config ---- */
+// Initialize Three.js
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.z = 5;
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 100,
-        "density": {
-          "enable": true,
-          "value_area":1000
-        }
-      },
-      "color": {
-        "value": ["#aa73ff", "#f8c210", "#83d238", "#33b1f8"]
-      },
-      
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#fff"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.6,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 2,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 120,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "grab"
-        },
-        "onclick": {
-          "enable": false
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 140,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
+// Create the particles
+var particles = new THREE.Group();
+var sphereGeometry = new THREE.SphereGeometry(0.1, 16, 16);
+var cubeGeometry = new THREE.BoxGeometry(0.1, 0.1, 0.1);
+var tetrahedronGeometry = new THREE.TetrahedronGeometry(0.1);
+for (var i = 0; i < 1000; i++) {
+  var particle;
+  var rand = Math.random();
+  if (rand < 0.33) {
+    particle = new THREE.Mesh(sphereGeometry, new THREE.MeshLambertMaterial({ color: 0xff0000 }));
+  } else if (rand < 0.67) {
+    particle = new THREE.Mesh(cubeGeometry, new THREE.MeshLambertMaterial({ color: 0x00ff00 }));
+  } else {
+    particle = new THREE.Mesh(tetrahedronGeometry, new THREE.MeshLambertMaterial({ color: 0x0000ff }));
+  }
+  particle.position.x = (Math.random() - 0.5) * 10;
+  particle.position.y = (Math.random() - 0.5) * 10;
+  particle.position.z = (Math.random() - 0.5) * 10;
+  particle.velocity = new THREE.Vector3((Math.random() - 0.5) / 10, (Math.random() - 0.5) / 10, (Math.random() - 0.5) / 10);
+  particles.add(particle);
+}
+scene.add(particles);
+
+// Add lighting
+var pointLight = new THREE.PointLight(0xffffff, 1);
+pointLight.position.set(0, 0, 0);
+scene.add(pointLight);
+
+// Rotate the camera
+var clock = new THREE.Clock();
+function rotateCamera() {
+  var elapsedTime = clock.getElapsedTime();
+  camera.position.x = 5 * Math.sin(elapsedTime / 5);
+  camera.position.y = 2.5 * Math.sin(elapsedTime / 5);
+  camera.position.z = 5 * Math.cos(elapsedTime / 5);
+  camera.lookAt(scene.position);
+}
+
+// Render the scene
+function render() {
+  requestAnimationFrame(render);
+  particles.children.forEach(function (particle) {
+    particle.position.add(particle.velocity);
+    if (particle.position.x < -10) {
+      particle.position.x = 10;
+    } else if (particle.position.x > 10) {
+      particle.position.x = -10;
+    }
+    if (particle.position.y < -10) {
+      particle.position.y = 10;
+    } else if (particle.position.y > 10) {
+      particle.position.y = -10;
+    }
+    if (particle.position.z < -10) {
+      particle.position.z = 10;
+    } else if (particle.position.z > 10) {
+      particle.position.z = -10;
+    }
   });
+  rotateCamera();
+  renderer.render(scene, camera);
+}
+render();
