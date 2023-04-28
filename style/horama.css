@@ -258,7 +258,7 @@ iframe {
 }
 
 .first{
-  
+  display: flex;
 }
 
 @keyframes horama {
