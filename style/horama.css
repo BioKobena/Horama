@@ -94,7 +94,7 @@ html {
 .list-items a {
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--blue-palette);
+  color: var(--white);
 }
 
 /* Navbar Link for my Navbar */
@@ -112,11 +112,11 @@ html {
 }
 
 .change.navbar-link {
-  color: var(--blue-pure);
+  color: var(--white);
 }
 
 .navbar-link:hover {
-  color: var(--blue-pure);
+  color: var(--blue-white);
 }
 
 .navbar-link::before {
@@ -161,8 +161,7 @@ html {
   height: 100vh;
   position: relative;
   background-image: var(--particles);
-  background-color: var(--blue-white);
-  /* background-color: rgba(0, 0, 0, 0.953); */
+  background-color: var(--primary-color);
 }
 
 .homeDescription {
@@ -170,14 +169,6 @@ html {
   font-weight: lighter;
 }
 
-iframe {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 
 .sideRight {
   position: absolute;
@@ -236,6 +227,7 @@ iframe {
 
 .explainAbout {
   font-size: 1.5rem;
+  margin-top: 5rem;
   text-align: justify;
   font-weight: 500;
 }
@@ -251,10 +243,6 @@ iframe {
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-}
-
-.aboutHorama {
-  animation: horama 5s alternate linear infinite;
 }
 
 .first{

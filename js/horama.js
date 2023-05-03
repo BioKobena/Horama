@@ -19,7 +19,7 @@ const mainFn = () =>{
     else
     {
         navbar.classList.remove('sticky');
-       container_nav.style.backgroundColor = '#e8f5f6';
+       container_nav.style.backgroundColor = 'none';
      
        container_nav.style.boxShadow = '0 0 0 rgba(0, 0, 0, 0.5)';
 
