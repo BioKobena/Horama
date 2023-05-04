@@ -11,6 +11,9 @@
     />
     <link rel="icon" href="./assets/horama.png" />
     <link rel="stylesheet" href="./style/horama.css" />
+    <link rel="stylesheet" href="./style/service_swipe.css" />
+
+    <link rel="stylesheet" href="./style/swiper.css" />
     <!-- <link rel="stylesheet" href="" /> -->
     <link
       rel="stylesheet"
@@ -146,388 +149,108 @@
 
       <section class="section about" id="about">
         <div class="first">
-          
-            <img
-              src="./assets/about_horama.png"
-              alt="About Picture"
-            />
-   
-          
-            <span class="explainAbout">
-              Horama est une entreprise informatique, spécialisée dans la vente <br>
-              de materiels et services informatique. <br>
-              La start-up a été fondée en <br>
-              2022 par des jeunes étudiants, qui ont pour missions de répondre à <br>
-              tous les besoins digitaux.
-            </span>
-    
+          <img src="./assets/about_horama.png" alt="About Picture" />
+
+          <span class="explainAbout">
+            Horama est une entreprise informatique, spécialisée dans la vente
+            <br />
+            de materiels et services informatique. <br />
+            La start-up a été fondée en <br />
+            2022 par des jeunes étudiants, qui ont pour missions de répondre à
+            <br />
+            tous les besoins digitaux.
+          </span>
         </div>
         <div class="allServices">
-          <div class="service">
-            <img src="./assets/affiche.jpeg" alt="" />
-          </div>
-          <div class="service">
-            <img src="./assets/mobile.jpeg" alt="" />
-          </div>
-          <div class="service">
-            <img src="./assets/montage.jpeg" alt="" />
-          </div>
+          <swiper-container
+            class="mySwiper"
+            pagination="true"
+            effect="coverflow"
+            grab-cursor="true"
+            centered-slides="true"
+            slides-per-view="auto"
+            coverflow-effect-rotate="50"
+            coverflow-effect-stretch="0"
+            coverflow-effect-depth="100"
+            coverflow-effect-modifier="1"
+            coverflow-effect-slide-shadows="true"
+          >
+            <swiper-slide>
+              <img src="./assets/montage.jpeg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./assets/affiche.jpeg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="./assets/mobile.jpeg" />
+            </swiper-slide>
+          </swiper-container>
         </div>
-        
       </section>
 
       <section class="section produits" id="services">
-        <h3 class="text_computer">
-          Découvrez nos gammes d'ordinateurs, accessible à tous
-        </h3>
-        <div class="container_products">
-          <div class="category">
-            <h1 class="asus">MACBOOK</h1>
-            <div class="pc">
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">MacBook Pro</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
+        <h1 class="text_computer">
+          Découvrez nos produits
+        </h1>
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          effect="coverflow"
+          grab-cursor="true"
+          centered-slides="true"
+          slides-per-view="auto"
+          coverflow-effect-rotate="50"
+          coverflow-effect-stretch="0"
+          coverflow-effect-depth="100"
+          coverflow-effect-modifier="1"
+          coverflow-effect-slide-shadows="true"
+        >
+        <swiper-slide>
+          <img src="./assets/computer/14.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/computer/15.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/computer/3.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/computer/ASUS TUF F15 FX506LH.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="./assets/computer/Razer 15(2022)-RZ09-0421.png" />
+        </swiper-slide>
+        </swiper-container>
 
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/mac.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">MacBook Pro</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/mac.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">MacBook Pro</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/mac.png" />
-              </div>
-            </div>
-          </div>
-
-          <div class="category">
-            <h1 class="asus">HP</h1>
-            <div class="pc">
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">HP Gamers</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/hp.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">HP Gamers</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/hp.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">HP Gamers</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/hp.png" />
-              </div>
-            </div>
-          </div>
-
-          <div class="category">
-            <h1 class="asus">ASUS</h1>
-            <div class="pc">
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">Asus ROG Zeyphus</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/asus.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">Asus ROG Zeyphus</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/asus.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">Asus ROG Zeyphus</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/asus.png" />
-              </div>
-            </div>
-          </div>
-
-          <div class="category">
-            <h1 class="asus">DELL</h1>
-            <div class="pc">
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">Dell XPS</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/dell.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">Dell XPS</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/dell.png" />
-              </div>
-
-              <div class="box-computer">
-                <div class="computer-text">
-                  <h2 class="computer-name">Dell XPS</h2>
-                  <ul class="computer-tools">
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-microchip"></i> Core i5
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-sharp fa-solid fa-hard-drive"></i> 16Go
-                    </li>
-                    <li class="tools-items">
-                      <i class="fa-solid fa-desktop"></i> 14"
-                    </li>
-                  </ul>
-                </div>
-                <img class="pc-picture" src="./assets/dell.png" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <swiper-container
+        class="mySwiper"
+        pagination="true"
+        effect="coverflow"
+        grab-cursor="true"
+        centered-slides="true"
+        slides-per-view="auto"
+        coverflow-effect-rotate="50"
+        coverflow-effect-stretch="0"
+        coverflow-effect-depth="100"
+        coverflow-effect-modifier="1"
+        coverflow-effect-slide-shadows="true"
+      >
+      <swiper-slide>
+        <img src="./assets/computer/14.png" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./assets/computer/15.png" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./assets/computer/3.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./assets/computer/ASUS TUF F15 FX506LH.png" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./assets/computer/Razer 15(2022)-RZ09-0421.png" />
+      </swiper-slide>
+      </swiper-container>
       </section>
 
       <section class="section contacts" id="contacts">
@@ -572,6 +295,10 @@
           <input type="submit" value="Envoyer" class="form-btn" />
         </form>
       </section>
+
+      <section class="footer">
+
+      </section>
     </div>
 
     <!-- <div class="loader">
@@ -580,9 +307,12 @@
         alt=""
       />
     </div> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <!-- <script src="./js/particule.js"></script> -->
+    <script src="./js/particule.js"></script>
     <script src="./js/horama.js"></script>
+    <script src="./js/computer_swiper.js"></script>
     <script src="./js/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    
   </body>
 </html>
