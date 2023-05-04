@@ -162,7 +162,7 @@ html {
   height: 100vh;
   position: relative;
   background-image: var(--particles);
-  background-color: var(--blue-light);
+  background-color: var(--gray-light);
 }
 
 .homeDescription {
