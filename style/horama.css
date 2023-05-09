@@ -38,12 +38,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--blue-white);
+  background: var(--white);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--blue-light);
+  background: var(--blue-white);
 }
 
 /* Handle on hover */
@@ -237,9 +237,10 @@ html {
 
 .explainAbout {
   font-size: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
   text-align: justify;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .first {
@@ -452,3 +453,15 @@ html {
 }
 
 /*Fin Produits*/
+
+
+/* Footer */
+
+.footer{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: ;
+}
+
+/* End of Footer */
