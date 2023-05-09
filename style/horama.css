@@ -55,7 +55,8 @@
 html {
   font-family: Montserrat;
   scroll-behavior: smooth;
-  overflow-x: hidden; /* Fin du scroll bar */
+  overflow-x: hidden;
+  position: relative;
 }
 
 .container {
@@ -66,7 +67,7 @@ html {
 
 .container-nav {
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   position: fixed;
   z-index: 10;
   /* background-color: var(--transparent); */
@@ -75,17 +76,17 @@ html {
 .logo {
   position: relative;
   left: 5rem;
-  width: 5rem !important;
-  height: 5rem !important;
+  width: 7rem !important;
+  height: 7rem !important;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .items {
-  margin-top: 2rem;
   display: flex;
   gap: 2rem;
   justify-content: space-around;
@@ -94,7 +95,7 @@ html {
 .list-items a {
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--blue-palette);
+  color: var(--blue-pure);
 }
 
 /* Navbar Link for my Navbar */
@@ -160,23 +161,23 @@ html {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: var(--particles);
-  background-color: var(--blue-white);
-  /* background-color: rgba(0, 0, 0, 0.953); */
+  filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+  background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #029797));
+  background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+  background-image: -moz-linear-gradient(45deg, #003073, #029797);
+  background-image: -ms-linear-gradient(45deg, #003073 0, #029797 100%);
+  background-image: -o-linear-gradient(45deg, #003073, #029797);
+  background-image: linear-gradient(135deg, #003073, #029797);
+  margin: 0px;
+  overflow: hidden;
 }
 
 .homeDescription {
   font-size: 2rem;
   font-weight: lighter;
-}
-
-iframe {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  color: var(--white);
 }
 
 .sideRight {
@@ -186,11 +187,11 @@ iframe {
 }
 
 .btn {
-  width: 20rem;
-  height: 3.5rem;
+  width: 23rem;
+  height: 4.5rem;
   position: absolute;
   left: 0;
-  bottom: -6rem;
+  bottom: -9rem;
   text-align: center;
   background-color: var(--blue-light);
   color: var(--white);
@@ -206,7 +207,7 @@ iframe {
 }
 .sideText {
   color: var(--blue-light);
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -217,8 +218,8 @@ iframe {
 }
 
 .computerSide {
-  width: 45rem;
-  height: 45rem;
+  width: 55rem;
+  height: 55rem;
 }
 
 /* Home part */
@@ -231,33 +232,17 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  background-color: rgba(232, 245, 246, 0.472);
+  background-color: rgba(232, 245, 246, 0.1);
 }
 
 .explainAbout {
   font-size: 1.5rem;
+  margin-top: 5rem;
   text-align: justify;
   font-weight: 500;
 }
 
-.category {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-}
-.pc {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-}
-
-.aboutHorama {
-  animation: horama 5s alternate linear infinite;
-}
-
-.first{
+.first {
   display: flex;
 }
 
@@ -295,13 +280,15 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* overflow-x: scr; */
 }
 .text_computer {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--white);
-  font-weight: lighter;
+  font-weight: 200;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
 }
 
 .container_products {
@@ -319,76 +306,11 @@ iframe {
   transition: opacity 0.3s;
 }
 
-.box-computer {
-  height: 18rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
-  /* background: linear-gradient(to right, var(--blue-light), var(--blue-white), var(--blue-pure), #00ffff, #0000ff, var(--white), var(--blue-palette));
-  background-size: 200% auto;
-  animation: gradient 10s ease infinite; */
-  box-shadow: 0.01rem 0.1rem 0.1rem var(--transparent);
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.5s;
-  border-radius: 0.15rem;
-}
-
-/* @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-
-.box-computer:hover {
-  box-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.11);
-}
-
-.computer-text {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--blue-palette);
-  text-transform: capitalize;
-  position: absolute;
-  top: -15rem;
-  z-index: 10;
-  transition: top 0.5s;
-}
-
-.box-computer:hover .computer-text {
-  top: 1rem;
-  transition: top 0.3s 0.3s;
-}
-
-.computer-tools {
-  font-size: 1.3rem;
-  color: var(--blue-palette);
-  letter-spacing: 0.1rem;
-  font-weight: 200;
-}
-
-.box-computer:hover .pc-picture {
-  opacity: 0.2;
-}
-
 .project-link {
   left: 4.3rem;
   position: absolute;
   bottom: -7rem;
   transition: bottom 0.5s;
-}
-
-.box-computer:hover .project-link {
-  bottom: 5rem;
-  transition: bottom 0.3s 0.3s;
 }
 
 .contacts {
@@ -397,7 +319,8 @@ iframe {
   padding: 2rem;
   text-align: center;
   background-size: cover;
-  animation: contact-bg 35s infinite;
+  background-color: #3d3d3d2e;
+  /* animation: contact-bg 35s infinite; */
 }
 
 .contact-heading {
