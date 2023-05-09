@@ -12,7 +12,10 @@
     <link rel="icon" href="./assets/horama.png" />
     <link rel="stylesheet" href="./style/horama.css" />
     <link rel="stylesheet" href="./style/service_swipe.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style/swiper.css" />
     <!-- <link rel="stylesheet" href="" /> -->
     <link
@@ -45,7 +48,7 @@
       </div>
 
       <section class="section home" id="particles-js">
-        <svg
+        <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 113 46"
@@ -122,10 +125,10 @@
               </animateMotion>
             </circle>
           </g>
-        </svg>
+        </svg> -->
         <div class="sideRight">
           <h1 class="sideText">
-            Bienvenue, <br />
+            Bienvenue <br />
             sur Horama Groups
           </h1>
           <span class="homeDescription"
@@ -134,7 +137,7 @@
           <span
             class="homeDescription"
             style="font-weight: bold; color: #2a7fa3"
-            >Horama, une vision</span
+            >Horama, plus qu'une vision</span
           >
           <button class="btn">
             <a class="link-discover" href="#about">
@@ -174,6 +177,7 @@
             coverflow-effect-depth="100"
             coverflow-effect-modifier="1"
             coverflow-effect-slide-shadows="true"
+            ,
           >
             <swiper-slide>
               <img src="./assets/montage.jpeg" />
@@ -189,9 +193,7 @@
       </section>
 
       <section class="section produits" id="services">
-        <h1 class="text_computer">
-          Découvrez nos produits
-        </h1>
+        <h1 class="text_computer">Découvrez nos produits</h1>
         <swiper-container
           class="mySwiper"
           pagination="true"
@@ -205,52 +207,52 @@
           coverflow-effect-modifier="1"
           coverflow-effect-slide-shadows="true"
         >
-        <swiper-slide>
-          <img src="./assets/computer/14.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./assets/computer/15.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./assets/computer/3.jpg" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./assets/computer/ASUS TUF F15 FX506LH.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="./assets/computer/Razer 15(2022)-RZ09-0421.png" />
-        </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/14.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/15.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/3.jpg" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/ASUS TUF F15 FX506LH.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/Razer 15(2022)-RZ09-0421.png" />
+          </swiper-slide>
         </swiper-container>
 
         <swiper-container
-        class="mySwiper"
-        pagination="true"
-        effect="coverflow"
-        grab-cursor="true"
-        centered-slides="true"
-        slides-per-view="auto"
-        coverflow-effect-rotate="50"
-        coverflow-effect-stretch="0"
-        coverflow-effect-depth="100"
-        coverflow-effect-modifier="1"
-        coverflow-effect-slide-shadows="true"
-      >
-      <swiper-slide>
-        <img src="./assets/computer/14.png" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="./assets/computer/15.png" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="./assets/computer/3.jpg" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="./assets/computer/ASUS TUF F15 FX506LH.png" />
-      </swiper-slide>
-      <swiper-slide>
-        <img src="./assets/computer/Razer 15(2022)-RZ09-0421.png" />
-      </swiper-slide>
-      </swiper-container>
+          class="mySwiper"
+          pagination="true"
+          effect="coverflow"
+          grab-cursor="true"
+          centered-slides="true"
+          slides-per-view="auto"
+          coverflow-effect-rotate="50"
+          coverflow-effect-stretch="0"
+          coverflow-effect-depth="100"
+          coverflow-effect-modifier="1"
+          coverflow-effect-slide-shadows="true"
+        >
+          <swiper-slide>
+            <img src="./assets/computer/14.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/15.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/3.jpg" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/ASUS TUF F15 FX506LH.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./assets/computer/Razer 15(2022)-RZ09-0421.png" />
+          </swiper-slide>
+        </swiper-container>
       </section>
 
       <section class="section contacts" id="contacts">
@@ -296,9 +298,7 @@
         </form>
       </section>
 
-      <section class="footer">
-
-      </section>
+      <section class="footer"></section>
     </div>
 
     <!-- <div class="loader">
@@ -309,10 +309,47 @@
     </div> -->
     <script src="./js/particule.js"></script>
     <script src="./js/horama.js"></script>
-    <script src="./js/computer_swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        initialSlide: 2,
+      });
+    </script>
     <script src="./js/loader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      initialSlide:1
+    });
+  </script>
   </body>
 </html>

@@ -95,7 +95,7 @@ html {
 .list-items a {
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--white);
+  color: var(--blackf);
 }
 
 /* Navbar Link for my Navbar */
@@ -113,7 +113,7 @@ html {
 }
 
 .change.navbar-link {
-  color: var(--white);
+  color: var(--blue-palette);
 }
 
 .navbar-link:hover {
@@ -162,7 +162,7 @@ html {
   height: 100vh;
   position: relative;
   background-image: var(--particles);
-  background-color: var(--gray-light);
+  background-color: #eee;
 }
 
 .homeDescription {
@@ -177,11 +177,11 @@ html {
 }
 
 .btn {
-  width: 20rem;
-  height: 3.5rem;
+  width: 23rem;
+  height: 4.5rem;
   position: absolute;
   left: 0;
-  bottom: -6rem;
+  bottom: -9rem;
   text-align: center;
   background-color: var(--blue-light);
   color: var(--white);
@@ -197,7 +197,7 @@ html {
 }
 .sideText {
   color: var(--blue-light);
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -208,8 +208,8 @@ html {
 }
 
 .computerSide {
-  width: 45rem;
-  height: 45rem;
+  width: 55rem;
+  height: 55rem;
 }
 
 /* Home part */
@@ -308,7 +308,8 @@ html {
   padding: 2rem;
   text-align: center;
   background-size: cover;
-  animation: contact-bg 35s infinite;
+  background-color: #3d3d3d2e;
+  /* animation: contact-bg 35s infinite; */
 }
 
 .contact-heading {
