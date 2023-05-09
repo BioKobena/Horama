@@ -459,9 +459,57 @@ html {
 
 .footer{
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   display: flex;
-  flex-direction: ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  position: relative;
 }
 
+.logo-footer{
+  width: 10rem;
+  height: 10rem;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  position: absolute;
+  left: 0rem;
+  top: 1rem;
+}
+
+.media-link{
+  width: 3rem;
+  height: 3rem;
+}
+
+.text-media{
+  font-weight: 100;
+}
+
+.imgae-network{
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items:center;
+  margin-left: -7rem;
+}
+
+.link-page{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+
+.items-footer{
+  display: flex;
+  flex-direction: column;
+}
 /* End of Footer */
