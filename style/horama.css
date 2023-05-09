@@ -505,11 +505,38 @@ html {
   flex-direction: column;
   position: absolute;
   right: 1rem;
-  top: 0;
+  /* top: 0; */
 }
 
 .items-footer{
   display: flex;
   flex-direction: column;
+  font-weight: 400;
+}
+
+.phon-numer{
+  position: absolute;
+  left: 0rem;
+  bottom: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+span{
+  font-weight: 900;
+}
+
+.footer-link{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--blue-pure);
+  letter-spacing: 0.3rem;
+  transition: all 0.2s;
+}
+
+.footer-link:hover{
+  transform: rotate(-10deg);
+  box-shadow: 0 2rem 3rem #000;
 }
 /* End of Footer */
