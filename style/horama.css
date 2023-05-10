@@ -540,3 +540,47 @@ span{
   box-shadow: 0 2rem 3rem #000;
 }
 /* End of Footer */
+
+/* Responsive Website */
+/* Responsive */
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1000px) {
+  body{
+    box-sizing:border-box;
+    width: 100%;
+    overflow: hidden;
+   }
+
+   .computerSide{
+    width: 35rem;
+    height: 35rem;
+    position: relative;
+    top: 12rem;
+   }
+
+   .sideText {
+    color: var(--blue-light);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  
+}
+
+@media (max-width: 600px) {
+ 
+}
+
+@media (max-width: 400px) {
+  
+}
+
+/* Fin du responsive */
+
+
+/* End of all pain on the earth */
